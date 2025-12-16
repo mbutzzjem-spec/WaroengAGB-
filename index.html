@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGB - Ayam Goreng Bakar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --hijau:#2e7d32;
+  --hijau-gelap:#1f5f25;
+  --abu:#f2f2f2;
+  --gelap:#1e1e1e;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:#fff;
+  color:var(--gelap);
+}
+
+/* HEADER */
+header,footer{
+  background:linear-gradient(135deg,var(--hijau-gelap),var(--hijau));
+  color:#fff;
+  text-align:center;
+  padding:34px 20px;
+}
+
+.logo{
+  font-size:32px;
+  font-weight:700;
+}
+
+.hours{
+  margin-top:8px;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:40px;
+  color:var(--hijau);
+  margin-bottom:16px;
+}
+
+.hero p{
+  max-width:650px;
+  margin:auto;
+  line-height:1.7;
+  margin-bottom:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 32px;
+  border-radius:30px;
+  background:var(--hijau);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:var(--hijau-gelap);
+}
+
+/* MENU */
+.menu-section{
+  padding:60px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.menu-section h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:32px;
+  color:var(--hijau);
+}
+
+.menu-horizontal{
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  padding-bottom:10px;
+}
+
+.menu-card{
+  min-width:260px;
+  background:var(--abu);
+  border-radius:20px;
+  padding:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.menu-card img{
+  width:100%;
+  border-radius:16px;
+  margin-bottom:12px;
+}
+
+.menu-card h3{
+  color:var(--hijau);
+  font-size:18px;
+}
+
+.menu-card p{
+  font-size:14px;
+  opacity:.8;
+}
+
+/* VIEW ALL BUTTON (FIXED) */
+.view-all{
+  text-align:center;
+  margin-top:30px;
+}
+
+.view-all a{
+  display:inline-block;
+  padding:14px 36px;
+  background:var(--hijau);
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:600;
+  font-size:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+  transition:.3s ease;
+}
+
+.view-all a:hover{
+  background:var(--hijau-gelap);
+  transform:translateY(-2px);
+}
+
+/* ORDER */
+.order{
+  margin-top:60px;
+  text-align:center;
+}
+
+.order h3{
+  font-size:24px;
+  margin-bottom:12px;
+}
+
+.order a{
+  display:inline-block;
+  padding:12px 26px;
+  border-radius:24px;
+  background:#25D366;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* STORY */
+.story{
+  max-width:800px;
+  margin:50px auto 0;
+  text-align:center;
+  padding:0 20px;
+}
+
+.story h3{
+  font-size:26px;
+  margin-bottom:14px;
+  color:var(--hijau);
+}
+
+.story p{
+  line-height:1.8;
+  opacity:.9;
+}
+
+/* FOOTER */
+.contact{
+  margin-bottom:16px;
+}
+
+.address{
+  max-width:480px;
+  margin:10px auto;
+  cursor:pointer;
+  opacity:.9;
+}
+
+.phone{
+  font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AGB</div>
+  <div class="hours">Jam operasional 13:00–23:00 WIB</div>
+</header>
+
+<section class="hero">
+  <h1>Ayam Goreng Bakar</h1>
+  <p>Ayam goreng renyah dan ayam bakar berbumbu khas, dimasak jujur dan disajikan hangat setiap hari.</p>
+  <a href="#menu" class="btn">Lihat Menu</a>
+</section>
+
+<section class="menu-section" id="menu">
+<h2>Menu Favorit</h2>
+
+<div class="menu-horizontal">
+  <div class="menu-card">
+    <img src="ayam-penyet.jpg">
+    <h3>ayam penyet</h3>
+    <p>di penyet dengan sambal ijo</p>
+  </div>
+
+  <div class="menu-card">
+    <img src="ayam-goreng.jpg">
+    <h3>Ayam Goreng</h3>
+    <p>Renyah dan segar</p>
+  </div>
+
+  <div class="menu-card">
+    <img src="ayam-bakar.jpg">
+    <h3>Ayam bakar</h3>
+    <p>lezatt,gurih,manis</p>
+  </div>
+</div>
+
+<div class="view-all">
+  <a href="menu.html">View All Menu</a>
+</div>
+
+<div class="order">
+  <h3>Mau order?</h3>
+  <a href="https://wa.me/6285848709391?text=haii%20ka%20mau%20pesen%20dong">Klik di sini</a>
+</div>
+
+<div class="story">
+  <h3>Cerita AGB</h3>
+  <p>
+    AGB lahir dari keberanian memulai di gang sederhana Sikam Raya.
+    Kami hanya menjual makanan yang berani kami makan sendiri.
+  </p>
+</div>
+
+</section>
+
+<footer>
+  <div class="contact">
+    <h3>Contact Us</h3>
+    <div class="phone">📞 0858 4870 9391</div>
+    <div class="address" id="alamat">
+      Jl. H. Sikam Raya, RT.002/RW.013, Kunciran Indah...
+    </div>
+  </div>
+  <p>© 2025 AGB - Ayam Goreng Bakar</p>
+</footer>
+
+<script>
+const fullAddress="Jl. H. Sikam Raya, RT.002/RW.013, Kunciran Indah, Kec. Pinang, Kota Tangerang, Banten 15144";
+document.getElementById("alamat").onclick=()=>{
+  navigator.clipboard.writeText(fullAddress);
+  alert("Alamat disalin");
+}
+</script>
+
+</body>
+</html>
